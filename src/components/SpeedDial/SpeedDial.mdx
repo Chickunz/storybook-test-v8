@@ -1,0 +1,36 @@
+import { Meta, Canvas, ArgTypes } from "@storybook/blocks";
+import * as SpeedDialStories from "./SpeedDial.stories";
+
+<Meta of={SpeedDialStories} />
+
+<style>
+  {`
+    .subheading {
+      --mediumdark: '#999999';
+      font-weight: 700;
+      font-size: 13px;
+      color: #999;
+      letter-spacing: 6px;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      margin-top: 40px;
+    }
+  `}
+</style>
+
+# SpeedDial Component
+
+Making My Components Here
+
+<div className="subheading">SpeedDial</div>
+
+<div>This is using the up SpeedDial!</div>
+
+<Canvas of={SpeedDialStories.Up} />
+
+<ArgTypes of={SpeedDialStories} />
+
+<div>This is the speed dial but right!!</div>
+
+<Canvas of={SpeedDialStories.Right} />
